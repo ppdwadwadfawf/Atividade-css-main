@@ -1,0 +1,249 @@
+/*====================================================================
+Geral
+======================================================================*/
+html {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #fffcf2;
+  font-size: calc(12px + 0.390625vw);
+  scroll-behavior: smooth;
+}
+
+/*====================================================================
+Header
+======================================================================*/
+header {
+  margin: 20px 0px 20px 0px;
+}
+header nav ul li {
+  margin: 10px;
+  text-align: center;
+}
+header nav ul li a {
+  color: #001524;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/*====================================================================
+Banner
+======================================================================*/
+
+section.banner {
+  text-align: center;
+  margin: 20px 5vw 20px 5vw;
+}
+
+section.banner img {
+  width: 50%;
+  margin: 0px 30px 0px 30px;
+}
+
+section.banner h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 20px 0px 20px 0px;
+}
+
+section.banner p {
+  font-size: 1rem;
+  margin: 20px 0px 20px 0px;
+}
+
+section.banner button {
+  background-color: #ff6464;
+  border: none;
+  border-radius: 8px;
+  width: 200px;
+  height: 50px;
+  transition: all 0.3 ease;
+}
+
+section.banner button a {
+  color: #fffcf2;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+section.banner button:hover {
+  background-color: #ff4a4a;
+  transform: translateY(-2px);
+}
+
+/*====================================================================
+Posts
+======================================================================*/
+
+section.posts h2 {
+  color: #000000;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+section.posts {
+  background-color: #edf7fa;
+  padding: 20px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.posts ul li h3 {
+  margin: 20px 0px 20px 0px;
+  color: #000000;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.8rem;
+}
+
+section.posts ul li p {
+  margin: 20px 0px 20px 0px;
+  color: #000000;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+section.posts ul li p.dataEtipo {
+  margin: 20px 0px 20px 0px;
+  color: #000000;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+section.posts ul li {
+  background-color: #e6f3ff;
+  margin: 15px;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+}
+
+/*====================================================================
+Works
+======================================================================*/
+
+section.works {
+  padding: 20px 10px 20px 10px;
+  background-color: #fffcf2;
+}
+
+section.works h2 {
+  color: #000000;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+section.works ul li p {
+  margin: 20px 0px 20px 0px;
+  color: #000000;
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.5rem;
+}
+
+section.works ul li h3 {
+  margin: 20px 0px 20px 0px;
+  color: #000000;
+  font-size: 1.4rem;
+  text-align: left;
+  font-weight: bold;
+  line-height: 1.8rem;
+}
+
+section.works p.tipo {
+  color: #8695a4;
+  word-spacing: 15px;
+}
+
+section.works p.tipo span {
+  background-color: #142850;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 5px 10px 5px 10px;
+  border-radius: 30px;
+}
+
+section.works img {
+  text-align: center;
+  display: block;
+  margin: auto;
+
+  width: 70%;
+}
+
+
+
+/*====================================================================
+Footer
+======================================================================*/
+
+footer {
+  text-align: center;
+}
+
+footer nav p a {
+  color: #21243d;
+  text-decoration: none;
+  font-size: 32px;
+  margin: 0px 5px 0px 5px;
+}
+
+footer p {
+  margin: 20px 0px 20px 0px;
+}
+
+/* CSS media query dentro de um stylesheet */
+@media (min-width: 900px) {
+  header nav ul {
+    display: flex;
+    justify-content: right;
+    padding-right: 1vw;
+  }
+  header nav ul li {
+    margin: 0px 20px 0px 20px;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .banner div img { 
+    width: 15rem;
+    margin-right: 5vw;
+  }
+
+  .banner div.esquerda {
+    text-align: left;
+    box-sizing: border-box;
+    margin: 0 15vw 0 0;
+    width: 50%;
+  }
+
+  .banner div.esquerda h1 {
+    font-size: 3rem;
+    width: 73%;
+  }
+
+  .banner div.esquerda p {
+    font-size: 0.9rem;
+    margin: 30px 0px 30px 0px;
+    width: 90%;
+    
+  }
+
+  .posts ul { 
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+  }
+  section.works ul li {
+  padding: 20px 20px 20px 20px;
+}
+section.works ul{
+    display: flex;
+}
+}
